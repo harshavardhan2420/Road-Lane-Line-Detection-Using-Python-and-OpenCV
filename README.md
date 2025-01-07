@@ -1,6 +1,6 @@
 # Road Lane Line Detection Using Python and OpenCV
 ## main.py file
-## Table of Contents  
+### Table of Contents  
 
 1. [Key Features](#key-features)  
 2. [Technologies and Tools](#technologies-and-tools)  
