@@ -18,14 +18,14 @@
 8. [Supporting Materials](#supporting-materials)  
 9. [Keywords](#keywords)  
 
-## Key Features  
+### Key Features  
 - Real-Time Lane Detection: Detects lane lines on road frames in real-time.  
 - Frame Masking: Filters irrelevant information to focus on the region of interest.  
 - Hough Transform: Detects and highlights lane lines accurately.  
 - Dynamic Smoothing: Reduces noise and ensures lane detection is smooth and continuous over frames.  
 - Canny Edge Detection: Accurately identifies edges in images to assist in lane line detection.  
 
-## Technologies and Tools  
+### Technologies and Tools  
 - Programming Language: Python  
 - Libraries:  
   - [OpenCV](https://opencv.org/): For computer vision operations.  
@@ -33,7 +33,7 @@
   - [MoviePy](https://zulko.github.io/moviepy/): For video processing and visualization.  
   - [Matplotlib](https://matplotlib.org/): For plotting and debugging.  
 
-## Project Workflow  
+### Project Workflow  
 1. Input processing of video or image frames.  
 2. Define a region of interest (ROI) to filter unnecessary parts of the frame.  
 3. Detect edges using Gaussian blur and Canny edge detection.  
@@ -43,36 +43,36 @@
 
 ## Step-by-Step Explanation  
 
-### 1. Input Processing  
+#### 1. Input Processing  
 - Objective: Load a video or series of road images to process frame by frame.  
 - Implementation:  
   - Convert the frame to grayscale using `cv2.cvtColor`.  
   - Extract relevant color ranges (e.g., yellow and white for lane lines) using HSV masks.  
 
-### 2. Region of Interest Selection  
+#### 2. Region of Interest Selection  
 - Objective: Focus on the road section where lane lines are likely to be present.  
 - *Implementation:  
   - Define a polygol region (ROI) based on road geometry.  
   - Apply masking to keep only the ROI using `cv2.bitwise_and`.  
 
-### 3. Edge Detection  
+#### 3. Edge Detection  
 - Objectve: Identify the edges in the ROI that represent potential lane boundaries.  
 - Implementation:  
   - Apply Gaussian blur to reduce noise in the frame.  
   - Use Canny edge detection to highlight lane line edges.  
 
-### 4. Lane Detection  
+#### 4. Lane Detection  
 - Objective: Detect and segment lane lines from other edges.  
 - Implementation:  
   - Use the Hough Line Transform to detect straight lines.  
   - Separate lines into left and right lanes based on slope.  
 
-### 5. Dynamic Smoothing  
+#### 5. Dynamic Smoothing  
 - Objective: Ensure the detected lane lines are smooth and consistent across frames.  
 - Implementation:  
   - Use a weighted average of previous and current frame detections to smooth lane lines.  
 
-### 6. Output Visualization  
+#### 6. Output Visualization  
 - Objective: Overlay the detected lane lines on the original frame for visualization.  
 - Implementation:  
   - Draw lane lines using `cv2.line`.  
@@ -80,7 +80,7 @@
 
 ---
 
-## Installation  
+### Installation  
 1. Clone the repository:  
    ```bash  
    git clone https://github.com/your-username/real-time-lane-detection.git  
@@ -98,35 +98,35 @@
 
 ---
 
-## Example Output  
+### Example Output  
 The output is a video or frame sequence with lane lines clearly overlaid on the original road footage. Below is an example of lane detection in action:  
 
 - Input: Video of a road captured from a dashboard camera.  
 - Output: The lane lines are dynamically highlighted in real-time.  
 
-## Applications  
+### Applications  
 - Autonomous vehicles for lane guidance and navigation.  
 - Driver-assistance systems to alert drivers about lane deviations.  
 - Research and development in intelligent transportation systems.  
 
 ---
 
-## Supporting Materials  
+### Supporting Materials  
 
-### Tutorials and Articles  
+#### Tutorials and Articles  
 - [Introduction to Lane Detection with OpenCV](https://learnopencv.com/road-lane-line-detection-with-openCV/)  
 - [Understanding the Hough Transform](https://towardsdatascience.com/understanding-hough-transform-with-python-22db266355e8)  
 - [Canny Edge Detection Explained](https://docs.opencv.org/3.4/da/d22/tutorial_py_canny.html)  
 
-### Research Papers  
+#### Research Papers  
 - [Lane Detection for Autonomous Vehicles](https://arxiv.org/abs/1802.05591)  
 - [Improved Lane Detection Algorithms](https://www.sciencedirect.com/science/article/abs/pii/S0957417417305268)  
 
-### Open Datasets  
+#### Open Datasets  
 - [Udacity Self-Driving Car Dataset](https://github.com/udacity/self-driving-car)  
 - [KITTI Vision Benchmark Suite](http://www.cvlibs.net/datasets/kitti/)  
 
-## Keywords  
+### Keywords  
 Python, OpenCV, Computer Vision, Lane Detection, Self-Driving Cars, Hough Transform, Canny Edge Detection, Real-Time Processing  
 
 
@@ -134,7 +134,7 @@ Python, OpenCV, Computer Vision, Lane Detection, Self-Driving Cars, Hough Transf
 
 A GUI-based application to showcase real-time lane detection. Using **Tkinter** for the GUI and **OpenCV** for video processing, it demonstrates input and output video streams for lane-line detection in a user-friendly interface.  
 
-## Table of Contents  
+### Table of Contents  
 
 1. [Key Features](#key-features)  
 2. [Technologies and Tools](#technologies-and-tools)  
@@ -149,7 +149,7 @@ A GUI-based application to showcase real-time lane detection. Using **Tkinter** 
 7. [Applications](#applications)  
 8. [Supporting Materials](#supporting-materials)  
 
-## Key Features  
+### Key Features  
 
 - Real-Time Display: Simultaneously displays input and output video streams side by side in the application window.  
 - Dynamic Resizing: Adjusts video frame sizes to fit the GUI layout.  
@@ -157,7 +157,7 @@ A GUI-based application to showcase real-time lane detection. Using **Tkinter** 
 
 ---
 
-## Technologies and Tools  
+### Technologies and Tools  
 
 - Programming Language: Python  
 - Libraries:  
@@ -168,7 +168,7 @@ A GUI-based application to showcase real-time lane detection. Using **Tkinter** 
 
 ---
 
-## Project Workflow  
+### Project Workflow  
 
 1. Import necessary libraries and set up the global variables for video streams.  
 2. Design the GUI using Tkinter and embed the application logo, title, and placeholders for video streams.  
@@ -177,9 +177,9 @@ A GUI-based application to showcase real-time lane detection. Using **Tkinter** 
 
 ---
 
-## Step-by-Step Explanation  
+### Step-by-Step Explanation  
 
-### 1. Setting Up the GUI  
+#### 1. Setting Up the GUI  
 
 - Objective: Create a Tkinter-based application window to hold all components like video displays and buttons.  
 - Implementation:  
@@ -195,7 +195,7 @@ heading.pack()
 heading2 = Label(root, text="Lane-Line Detection", pady=20, font=('arial', 45, 'bold'))  
 heading2.pack()  
 ```  
-### 2. Integrating Input Video  
+#### 2. Integrating Input Video  
 
 - Objective: Load an input video stream and display it in the GUI.  
 - Implementation:  
@@ -218,7 +218,7 @@ def show_vid():
         lmain.after(10, show_vid)  
 ```  
 
-### 3. Displaying Processed Video  
+#### 3. Displaying Processed Video  
 
 - Objective: Show the output video stream with lane detection applied.  
 - Implementation:  
@@ -240,7 +240,7 @@ def show_vid2():
         lmain2.after(10, show_vid2)  
 ```  
 
-### 4. Quit Button Implementation  
+#### 4. Quit Button Implementation  
 
 - Objective: Provide a way to exit the application.  
 - Implementation:  
@@ -253,7 +253,7 @@ exitbutton = Button(root, text='Quit', fg="red", command=root.destroy).pack(side
 
 ---
 
-## Installation  
+### Installation  
 
 1. Clone the repository:  
    ```bash  
@@ -270,7 +270,7 @@ exitbutton = Button(root, text='Quit', fg="red", command=root.destroy).pack(side
    python lane_detection_gui.py  
    ```
    
-## Example Output  
+### Example Output  
 
 The application window will display the input video on the left and the processed output video with detected lane lines on the right.  
 
@@ -282,7 +282,7 @@ The application window will display the input video on the left and the processe
 
 ---
 
-## Supporting Materials  
+### Supporting Materials  
 
 - [Tkinter Documentation](https://docs.python.org/3/library/tkinter.html)  
 - [OpenCV Tutorials](https://opencv-python-tutroals.readthedocs.io/en/latest/)  
