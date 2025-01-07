@@ -83,7 +83,7 @@
 ### Installation  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/your-username/real-time-lane-detection.git  
+   git clone https://github.com/harshavardhan2420/Road-Lane-Line-Detection-Using-Python-and-OpenCV.git  
    ```  
 
 2. Install required libraries:  
