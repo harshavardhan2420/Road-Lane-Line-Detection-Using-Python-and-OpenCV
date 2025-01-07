@@ -12,11 +12,10 @@
     - [4. Lane Detection](#4-lane-detection)  
     - [5. Dynamic Smoothing](#5-dynamic-smoothing)  
     - [6. Output Visualization](#6-output-visualization)  
-5. [Installation](#installation)  
-6. [Example Output](#example-output)  
-7. [Applications](#applications)  
-8. [Supporting Materials](#supporting-materials)  
-9. [Keywords](#keywords)  
+5. [Example Output](#example-output)  
+6. [Applications](#applications)  
+7. [Supporting Materials](#supporting-materials)  
+8. [Keywords](#keywords)  
 
 ### Key Features  
 - Real-Time Lane Detection: Detects lane lines on road frames in real-time.  
@@ -80,24 +79,6 @@
 
 ---
 
-### Installation  
-1. Clone the repository:  
-   ```bash  
-   git clone https://github.com/harshavardhan2420/Road-Lane-Line-Detection-Using-Python-and-OpenCV.git  
-   ```  
-
-2. Install required libraries:  
-   ```bash  
-   pip install numpy opencv-python matplotlib moviepy  
-   ```  
-
-3. Run the project on sample videos:  
-   ```bash  
-   python lane_detection.py  
-   ```  
-
----
-
 ### Example Output  
 The output is a video or frame sequence with lane lines clearly overlaid on the original road footage. Below is an example of lane detection in action:  
 
@@ -143,11 +124,10 @@ A GUI-based application to showcase real-time lane detection. Using **Tkinter** 
     - [1. Setting Up the GUI](#1-setting-up-the-gui)  
     - [2. Integrating Input Video](#2-integrating-input-video)  
     - [3. Displaying Processed Video](#3-displaying-processed-video)  
-    - [4. Quit Button Implementation](#4-quit-button-implementation)  
-5. [Installation](#installation)  
-6. [Example Output](#example-output)  
-7. [Applications](#applications)  
-8. [Supporting Materials](#supporting-materials)  
+    - [4. Quit Button Implementation](#4-quit-button-implementation)   
+5. [Example Output](#example-output)  
+6. [Applications](#applications)  
+7. [Supporting Materials](#supporting-materials)  
 
 ### Key Features  
 
@@ -250,25 +230,6 @@ def show_vid2():
 ```python  
 exitbutton = Button(root, text='Quit', fg="red", command=root.destroy).pack(side=BOTTOM)  
 ```  
-
----
-
-### Installation  
-
-1. Clone the repository:  
-   ```bash  
-   git clone https://github.com/your-username/lane-line-detection-gui.git  
-   ```  
-
-2. Install required libraries:  
-   ```bash  
-   pip install numpy opencv-python pillow  
-   ```  
-
-3. Run the application:  
-   ```bash  
-   python lane_detection_gui.py  
-   ```
    
 ### Example Output  
 
